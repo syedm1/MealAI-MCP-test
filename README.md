@@ -14,10 +14,7 @@ Claude Desktop ←→ MCP Server ←→ Nutritionix API
 
 
 
-
-
-<video src='https://github.com/user-attachments/assets/88c0f23e-a811-4635-93cc-571402e95b94' width=200/>
-
+https://github.com/user-attachments/assets/88c0f23e-a811-4635-93cc-571402e95b94
   
 ## Prerequisites
 
