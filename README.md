@@ -12,6 +12,13 @@ Claude Desktop ←→ MCP Server ←→ Nutritionix API
 
 **📊 [View Detailed Architecture](ARCHITECTURE.md)**  **🔧 [Component Breakdown](COMPONENTS.md)**
 
+
+
+
+
+<video src='https://github.com/user-attachments/assets/88c0f23e-a811-4635-93cc-571402e95b94' width=200/>
+
+  
 ## Prerequisites
 
 - Node.js 18+ 
