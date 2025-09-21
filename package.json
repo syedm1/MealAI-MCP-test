@@ -1,0 +1,36 @@
+{
+  "name": "nutritionix-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Nutritionix API integration with MealAI",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "watch": "tsx watch src/index.ts",
+    "start:mac": "export NIX_APP_ID=your_app_id && export NIX_APP_KEY=your_app_key && export DATABASE_URL=postgresql://mealai_user:mealai_password@localhost:5432/mealai && npm start",
+    "start:windows": "set NIX_APP_ID=your_app_id && set NIX_APP_KEY=your_app_key && set DATABASE_URL=postgresql://mealai_user:mealai_password@localhost:5432/mealai && npm start",
+    "docker:start": "docker compose up -d",
+    "docker:start:mac": "docker compose -f docker-compose.mac.yml up -d",
+    "docker:stop": "docker compose down",
+    "setup:mac": "chmod +x start.sh && npm run docker:start:mac && npm run build",
+    "setup:windows": "npm run docker:start && npm run build"
+  },
+  "keywords": ["mcp", "nutritionix", "meal-tracking", "nutrition"],
+  "author": "MealAI",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.3",
+    "zod": "^3.22.4",
+    "axios": "^1.6.0",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "tsx": "^4.6.0",
+    "@types/node": "^20.10.0",
+    "@types/pg": "^8.10.0"
+  }
+}
+
